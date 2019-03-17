@@ -1,4 +1,6 @@
 let notes = new Set();
+let x = 300;
+let y = 0;
 
 
 
@@ -72,7 +74,14 @@ function createEmptyNote() {
 
     let noteText = "Add note";
 
-    let transformValue = "translateX(300px)";
+    //let transformValue = "translateX(300px)";
+	x = x + 10;
+	
+	y = y + 10;
+	
+	let transformValue = `translateX(${x}px) translateY(${y}px)`;
+	
+
 
 
 
@@ -382,8 +391,6 @@ class NoteController {
         
 
         draggedElement.parentElement.style.transform = transformValuee;
-
-     
 
     }
 
