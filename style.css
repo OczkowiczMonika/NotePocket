@@ -1,157 +1,43 @@
-body {
+<!DOCTYPE html>
 
-	background: rgb(65, 64, 64);
+<html>
 
-	font-family: tahoma;
 
-	}
 
+<head>
 
 
-.container {
 
-	 display: flex;
+    <meta charset="utf-8" />
 
-}
+    <title>NotePocket</title>
 
+    <link rel="stylesheet" href="style.css">
 
+    <script src="script.js" type="text/javascript"></script>
 
-#corner-button {
+</head>
 
-    height: 40px;
 
-    width: 40px;
 
-    font-size: 15px;
+<body>
 
-    font-weight: bold;
 
-    background: rgb(89, 89, 90);
 
-    color: rgb(255, 255, 255);
+	<body onload="init()" onunload="save()">
 
-    outline: none;
+		<div class="container">
 
-    border-color: #616161;
+			<button id="corner-button">+</button>
 
-    cursor: pointer;
+		</div>
 
-}
+	</body>
 
 
 
-.note {
+</body>
 
-    min-width: 200px;
 
-    min-height: 200px;
 
-    background: rgb(78, 67, 51);
-
-    position: absolute;
-
-    left: 0px;
-
-    top: 0px;
-
-	 box-shadow: 5px 5px 10px rgba(241, 239, 239, 0.2);
-
-	 
-
-}
-
-
-
-.note-header {
-
-    min-height: 40px;
-
-    background: rgb(58, 228, 240);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    font-family: tahoma;
-
-
-
-}
-
-
-
-.note-header:hover {
-
-    cursor: grab;
-
-}
-
-
-
-.close-button {
-
-    height: 30px;
-
-    width: 30px;
-
-    margin-right: 10px;
-
-    background: rgb(163, 163, 163);
-
-    color: #FFFFFF;
-
-    font-weight: bold;
-
-    border: none;
-
-    outline: none;
-
-    cursor: pointer;
-
-}
-
-
-
-.header-textarea {
-
-    background: rgb(211, 211, 230);
-
-    color:black;
-
-    font-weight: bold;
-
-    min-width: 80%;
-
-    max-height: 1.1em;
-
-    min-height: 1.1em;
-
-    margin-left: 4px;
-
-    resize: none;
-
-    border: none;
-
-    overflow-x: hidden;
-
-    overflow-y: hidden;
-
-    font-family: tahoma;
-
-}
-
-
-
-.note-textarea {
-
-    min-width: 600px;
-
-    min-height: 500px;
-
-    outline: none;
-
-    border: none;
-
-}
+</html>
